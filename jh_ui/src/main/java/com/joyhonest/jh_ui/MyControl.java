@@ -289,14 +289,14 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
 
 
         params2.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
-       // params2.setMargins(-1, topPx, -1, botPx);
+        // params2.setMargins(-1, topPx, -1, botPx);
         params2.setMargins(-1, -1, -1, -1);
         this.addView(RockeLeft, params2);
-       // RockeLeft.setBackgroundColor(0x50FF0000);
+        // RockeLeft.setBackgroundColor(0x50FF0000);
 
 
         params3.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-       // params3.setMargins(-1, topPx, -1, botPx);
+        // params3.setMargins(-1, topPx, -1, botPx);
         params3.setMargins(-1, -1, -1, -1);
         this.addView(RockeRight, params3);
         //RockeRight.setBackgroundColor(0xFF00FF00);
@@ -615,8 +615,8 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
 
             if(bFlyType)
             {
-             //   Bitmap bmp = BitmapFactory.decodeResource(this.getContext().getResources(), R.mipmap.cir_back_fly_jh_fig);
-             //   RockeRight.F_SetImage(bmp);
+                //   Bitmap bmp = BitmapFactory.decodeResource(this.getContext().getResources(), R.mipmap.cir_back_fly_jh_fig);
+                //   RockeRight.F_SetImage(bmp);
 
             }
 
@@ -778,6 +778,8 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
 
 
     public class MyRockeViewA extends RelativeLayout {
+
+        private  Handler   mHandler;
 
         private MyRipple  myRipple;
         public boolean bFlyType = true;
@@ -941,7 +943,7 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
             ripple_params = new RelativeLayout.LayoutParams(76, 76);
             this.addView(myRipple,ripple_params);
 
-
+            mHandler = new Handler();
 
             myRipple.setVisibility(INVISIBLE);
             if (ba) {
@@ -1016,13 +1018,13 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
 
         private void DrawCir(Canvas canvas) {
             if ((nType & TYPE_Acceleration_NoDispX) != 0) {
-                    RectF dstRect = new RectF(centx - CirRadius, cirPoint.y - CirRadius, centx + CirRadius, cirPoint.y + CirRadius);
-                    canvas.drawBitmap(cirBmp, null, dstRect, null);
+                RectF dstRect = new RectF(centx - CirRadius, cirPoint.y - CirRadius, centx + CirRadius, cirPoint.y + CirRadius);
+                canvas.drawBitmap(cirBmp, null, dstRect, null);
                 return;
             }
             if ((nType & TYPE_Acceleration_NoDispY) != 0) {
-                    RectF dstRect = new RectF(cirPoint.x - CirRadius, centy - CirRadius, cirPoint.x + CirRadius, centy + CirRadius);
-                    canvas.drawBitmap(cirBmp, null, dstRect, null);
+                RectF dstRect = new RectF(cirPoint.x - CirRadius, centy - CirRadius, cirPoint.x + CirRadius, centy + CirRadius);
+                canvas.drawBitmap(cirBmp, null, dstRect, null);
                 return;
             }
             {
@@ -1031,7 +1033,7 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
 
                     if((nType & TYPE_X_Acceleration)!=0 || (nType &TYPE_Y_Acceleration)!=0 )
                     {
-                         return;
+                        return;
                     }
                     else
                     {
@@ -1558,7 +1560,7 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
 
             if (bPath)
             {
-                    dsb = Storage.dip2px(getContext(), 50);
+                dsb = Storage.dip2px(getContext(), 50);
             }
             else {
                 if (bFlyType)
@@ -1581,7 +1583,7 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
             Radius_VV = Radius_VV * Radius_VV;
 
 
-           // ripple_params =(LayoutParams)myRipple.getLayoutParams();// LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+            // ripple_params =(LayoutParams)myRipple.getLayoutParams();// LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             ripple_params.width = 200;//(int)(CirRadius*1.2);
             ripple_params.height =200;// (int)(CirRadius*1.2);
             myRipple.post(new Runnable() {
@@ -1876,20 +1878,23 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
             switch (action)
             {
                 case MotionEvent.ACTION_DOWN:
-                    bTouched = true;
+
                     bCanMoved = false;
                     if (dstRect.contains(x, y))
                     {
                         if ((nType & TYPE_X_Acceleration) == 0 || (nType & TYPE_Y_Acceleration) == 0)
                             bCanMoved = true;
 
-                        if(bFlyType)
-                        {
-                            if ((nType & TYPE_X_Acceleration) != 0 && (nType & TYPE_Y_Acceleration) != 0)
-                            {
-                                if(myRipple.getVisibility()!=VISIBLE) {
-                                    myRipple.resetWave();
-                                    myRipple.setVisibility(VISIBLE);
+                        if (da <= Radius_VV) {
+                            if (bFlyType) {
+                                if ((nType & TYPE_X_Acceleration) != 0 && (nType & TYPE_Y_Acceleration) != 0) {
+                                    bTouched = true;
+                                    mHandler.removeCallbacksAndMessages(null);
+                                    myRipple.F_SetPlay(true);
+                                    if (myRipple.getVisibility() != VISIBLE) {
+                                        myRipple.resetWave();
+                                        myRipple.setVisibility(VISIBLE);
+                                    }
                                 }
                             }
                         }
@@ -1914,7 +1919,7 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
                         touchPoint.y = y;
                     }
                     else
-                        {
+                    {
                         da = (int) Math.sqrt(da);
                         x = dx * Radius_V1 / da;
                         y = dy * Radius_V1 / da;
@@ -1955,13 +1960,17 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
                     bTouched = false;
                     if(myRipple.getVisibility()==VISIBLE)
                     {
-                         new Handler().postDelayed(new Runnable() {
-                             @Override
-                             public void run() {
-                                  if(!bTouched)
-                                    myRipple.setVisibility(INVISIBLE);
-                             }
-                         },600);
+                        myRipple.F_SetPlay(false);
+                        mHandler.removeCallbacksAndMessages(null);
+                        /*
+                        mHandler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                myRipple.setVisibility(INVISIBLE);
+                            }
+                        },1000);
+                        */
+
                     }
 
                     if ((nType & TYPE_RestCentX) != 0 & (nType & TYPE_X_Acceleration) == 0) {
@@ -1970,8 +1979,8 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
                     if ((nType & TYPE_RestCentY) != 0 & (nType & TYPE_Y_Acceleration) == 0) {
                         cirPoint.y = centy;
                     }
-                 //   touchPoint.x = x;
-                 //   touchPoint.y = y;
+                    //   touchPoint.x = x;
+                    //   touchPoint.y = y;
                     invalidate();
                     break;
             }
@@ -2175,7 +2184,7 @@ public class MyControl extends RelativeLayout implements SensorEventListener {
                 }
             }
 
-        //    Log.e("acceleration", "X:" + x + "   Y=" + y);
+            //    Log.e("acceleration", "X:" + x + "   Y=" + y);
             x *= 0.8;
             y *= 0.8;
             if (x != 0 || y != 0) {
