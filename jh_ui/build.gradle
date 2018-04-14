@@ -61,7 +61,7 @@ publish {
     userOrg = 'aivenlau'//bintray.com用户名
     groupId = 'com.Joyhonest'//jcenter上的路径
     artifactId = 'JH_Camera'//项目名称
-    publishVersion = '1.0.2'//版本号
+    publishVersion = '1.0.3'//版本号
     desc = 'this is for JH WifiCamera'//描述，不重要
     website = 'https://github.com/aivenlau'//网站，最好有，不重要
 }
