@@ -237,13 +237,13 @@ public class wifination {
     public static native void release();
 
     /**
-     * @param width
-     * @param height
+     *
+     *
      */
     public static native void changeLayout(int width, int height);
 
     /**
-     * @paramdata
+     *
      */
     public static native void drawFrame();
 
