@@ -30,7 +30,7 @@
             android:id="@+id/button01"
             android:layout_width="30dp"
             android:layout_height="26dp"
-            android:background="@mipmap/remote_control_fly_jh_b"
+            android:background="@mipmap/remote_control_fly_jh"
             android:gravity="center_horizontal"
             />
 
@@ -68,7 +68,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:background="@mipmap/folder_fly_jh_b"/>
+            android:background="@mipmap/folder_fly_jh"/>
 
     </LinearLayout>
 
@@ -84,6 +84,16 @@
         android:layout_marginTop="5dp"
         android:background="@mipmap/return_icon_fly_jh"/>
 
+    <Button
+        android:id="@+id/return_btn1"
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-20dp"
+        android:layout_toStartOf="@+id/button10"
+        android:background="@mipmap/return_icon_fly_jh"/>
+
 
     <Button
         android:id="@+id/button10"
@@ -93,7 +103,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/button11"
         android:layout_marginTop="45dp"
-        android:background="@mipmap/stop_nor_fly_jh_b"/>
+        android:background="@mipmap/stop_nor_fly_jh"/>
 
     <Button
         android:id="@+id/button11"
@@ -102,7 +112,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="35dp"
-        android:background="@mipmap/keyup_dn_fly_jh_b"
+        android:background="@mipmap/keyup_dn_fly_jh"
         />
 
     <TextView
@@ -275,6 +285,7 @@
         android:textStyle="bold"
         android:visibility="visible"
         tools:ignore="HardcodedText"/>
+
 
 
 </RelativeLayout>

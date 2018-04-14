@@ -9,43 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac35d5e2-61fb-4f84-a823-9db9d29a5b6c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/build.gradle" afterPath="$PROJECT_DIR$/jh_ui/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/libs/armeabi-v7a/libjh_wifi.so" afterPath="$PROJECT_DIR$/jh_ui/libs/armeabi-v7a/libjh_wifi.so" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPathFragment.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPathFragment.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/Fly_PlayActivity.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/Fly_PlayActivity.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/MyControl.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/MyControl.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/MyControl_A.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/MyControl_A.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/PlayActivity.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/PlayActivity.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/wifination.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/wifination.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/adj_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/adj_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/adj_sel_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/adj_sel_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/cir_back_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/cir_back_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/gsensor_icon_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/gsensor_icon_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/gsensor_icon_sel_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/gsensor_icon_sel_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/headless_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/headless_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/headless_sel_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/headless_sel_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/path_icon_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/path_icon_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/photo_icon_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/photo_icon_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/photo_record_icon_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/photo_record_icon_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/speed_high_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/speed_high_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/speed_low_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/speed_low_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/stop_nor_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/stop_nor_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/stop_nor_fly_jh_b.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/stop_nor_fly_jh_b.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/stop_sel_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/stop_sel_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/switch_back_1_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/switch_back_1_fly_jh.png" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/vr_fly_jh.png" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/mipmap-xhdpi/vr_fly_jh.png" />
-    </list>
+    <list default="true" id="ac35d5e2-61fb-4f84-a823-9db9d29a5b6c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StartActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joyhonest/syma_lib/StartActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlyPlayFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="145" column="66" lean-forward="true" selection-start-line="145" selection-start-column="66" selection-end-line="145" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -139,16 +113,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="values.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/bbb5480d2101c273b04cbf9cdef471cc/res/values/values.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24540">
-              <caret line="1636" column="4" lean-forward="false" selection-start-line="1636" selection-start-column="4" selection-end-line="1636" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -4018,13 +3982,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="105" column="63" lean-forward="false" selection-start-line="105" selection-start-column="63" selection-end-line="105" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_fly_play_jh.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -4119,6 +4076,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="145" column="66" lean-forward="true" selection-start-line="145" selection-start-column="66" selection-end-line="145" selection-end-column="66" />
           <folding />
         </state>
       </provider>
