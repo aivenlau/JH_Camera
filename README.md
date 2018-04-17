@@ -2,7 +2,7 @@
 
 1 使用
 
-      compile 'com.Joyhonest:JH_Camera:1.0.4'
+      compile 'com.Joyhonest:JH_Camera:1.0.5'
 
   对于SyMa Fly
       
