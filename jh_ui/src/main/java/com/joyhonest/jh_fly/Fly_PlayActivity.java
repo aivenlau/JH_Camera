@@ -119,7 +119,7 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         wifination.naSetVrBackground(true);
-
+        JH_App.bFlyDisableAll = true;
 
         mAsker=new PermissionAsker(10,new Runnable() {
             @Override
@@ -177,30 +177,38 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
         RssiRunable = new Runnable() {
             @Override
             public void run() {
-                /*
+
                 int nrssi = JH_App.F_GetWifiRssi();
                 {
-
-                    if(main_fragment!=null)
+                    if(flyPlayFragment!=null)
                     {
-                        F_DispRssi(main_fragment.imageViewRssi,nrssi);
+                        F_DispRssi(flyPlayFragment.WifiSingle,nrssi);
                     }
-                    if(path_fragment!=null)
+                    if(flyPathFragment!=null)
                     {
-                        F_DispRssi(path_fragment.imageViewRssi,nrssi);
+                        F_DispRssi(flyPathFragment.WifiSingle,nrssi);
                     }
-
                 }
                 RssiHander.postDelayed(this,1000);
-            */
+
             }
         };
 
 
         F_InitFragment();
+        RssiHander.postDelayed(RssiRunable,100);
 //        JH_Tools.InitEncoder(1280,720,25,(int)(1000*1000*4));//
     }
 
+    @Subscriber(tag="NeedEnable_123")
+    private  void NeedEnable_123(String str)
+    {
+        if(mActiveFragment == flyPlayFragment)
+        {
+            JH_App.bFlyDisableAll=false;
+            flyPlayFragment.F_DispDisableAll();
+        }
+    }
 
     @Subscriber(tag = "SavePhotoOK")
     private void SavePhotoOK(String Sn) {
@@ -253,16 +261,14 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
     private void F_DispRssi(ImageView imageView, int nRssi) {
         if (imageView == null)
             return;
-        if (nRssi >= 4) {
-            imageView.setBackgroundResource(R.mipmap.wifistrength_4_jh);
-        } else if (nRssi == 3) {
-            imageView.setBackgroundResource(R.mipmap.wifistrength_3_jh);
+        if (nRssi >= 3) {
+            imageView.setBackgroundResource(R.mipmap.ic_wifi04);
         } else if (nRssi == 2) {
-            imageView.setBackgroundResource(R.mipmap.wifistrength_2_jh);
+            imageView.setBackgroundResource(R.mipmap.ic_wifi03);
         } else if (nRssi == 1) {
-            imageView.setBackgroundResource(R.mipmap.wifistrength_1_jh);
+            imageView.setBackgroundResource(R.mipmap.ic_wifi02);
         } else {
-            imageView.setBackgroundResource(R.mipmap.wifistrength_0_jh);
+            imageView.setBackgroundResource(R.mipmap.ic_wifi01);
         }
 
     }
@@ -748,6 +754,14 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
         }
 
     }
+    @Subscriber(tag ="MyControlTouched")
+    private  void MyControlTouched(String str)
+    {
+        if(mActiveFragment == flyPlayFragment)
+        {
+            flyPlayFragment.F_DispNoMoremenu();
+        }
+    }
 
     @Subscriber(tag = "SwitchChanged")
     private void SwitchChanged(SwitchMesage b) {
@@ -757,7 +771,10 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
                 flyPlayFragment.F_SetPhoto(b.bLeft);
             else
             {
-
+                if(b.bLeft)
+                {
+                    flyPlayFragment.F_SetNoGsensor();
+                }
                 flyPlayFragment.F_SetMenuLeftRight(b.bLeft);
             }
         }
