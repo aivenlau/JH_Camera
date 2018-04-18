@@ -40,4 +40,5 @@
   <com.android.tools.build.jetifier/>
   <tools.base.build-system.debug/>
   <androidx.databinding/>
+  <androidx.constraintlayout/>
 </metadata>
