@@ -14,27 +14,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/master-index.xml" afterPath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/master-index.xml" />
       <change beforePath="$PROJECT_DIR$/jh_ui/build.gradle" afterPath="$PROJECT_DIR$/jh_ui/build.gradle" />
       <change beforePath="$PROJECT_DIR$/jh_ui/jh_ui.iml" afterPath="$PROJECT_DIR$/jh_ui/jh_ui.iml" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/BrowFilesFragment.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/BrowFilesFragment.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPathFragment.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPathFragment.java" />
       <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/Fly_PlayActivity.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/Fly_PlayActivity.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/JH_App.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/JH_App.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_brow_files.xml" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_brow_files.xml" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_fly_path.xml" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_fly_path.xml" />
       <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_fly_play_jh.xml" afterPath="$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_fly_play_jh.xml" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/raw/anjian.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/raw/center.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/res/raw/photo_m.wav" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,8 +56,18 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jh_ui/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
-              <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="273">
+              <caret line="63" column="27" lean-forward="false" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JH_GLSurfaceView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/JH_GLSurfaceView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -77,7 +76,7 @@
       <file leaf-file-name="MyControl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/MyControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1253">
+            <state relative-caret-position="36315">
               <caret line="2466" column="48" lean-forward="false" selection-start-line="2466" selection-start-column="48" selection-end-line="2466" selection-end-column="48" />
               <folding>
                 <element signature="e#84303#84304#0" expanded="true" />
@@ -116,10 +115,10 @@
       <file leaf-file-name="FlyPlayFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17295">
-              <caret line="1182" column="5" lean-forward="false" selection-start-line="1182" selection-start-column="5" selection-end-line="1182" selection-end-column="5" />
+            <state relative-caret-position="144">
+              <caret line="117" column="60" lean-forward="false" selection-start-line="117" selection-start-column="60" selection-end-line="117" selection-end-column="60" />
               <folding>
-                <marker date="1524016988000" expanded="true" signature="34818:37189" ph="{...}" />
+                <marker date="1524211153000" expanded="true" signature="34825:37196" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -128,19 +127,10 @@
       <file leaf-file-name="FlyPathFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPathFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4875">
+            <state relative-caret-position="4995">
               <caret line="359" column="31" lean-forward="false" selection-start-line="359" selection-start-column="20" selection-end-line="359" selection-end-column="31" />
               <folding>
                 <marker date="1524020344000" expanded="true" signature="6986:7819" ph="{...}" />
-                <marker date="1524020344000" expanded="true" signature="7862:7928" ph="{...}" />
-                <marker date="1524020344000" expanded="true" signature="7974:8179" ph="{...}" />
-                <marker date="1524020344000" expanded="true" signature="8215:8743" ph="{...}" />
-                <marker date="1524020344000" expanded="true" signature="8827:8967" ph="{...}" />
-                <marker date="1524020344000" expanded="true" signature="9009:9066" ph="{...}" />
-                <marker date="1524020344000" expanded="true" signature="9105:10051" ph="{...}" />
-                <marker date="1524020344000" expanded="true" signature="10082:10175" ph="{...}" />
-                <marker date="1524020344000" expanded="true" signature="10420:10554" ph="{...}" />
-                <marker date="1524020344000" expanded="true" signature="10643:15428" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -149,7 +139,7 @@
       <file leaf-file-name="Fly_PlayActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/Fly_PlayActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7125">
+            <state relative-caret-position="7170">
               <caret line="541" column="66" lean-forward="false" selection-start-line="541" selection-start-column="66" selection-end-line="541" selection-end-column="66" />
               <folding />
             </state>
@@ -158,24 +148,14 @@
       </file>
       <file leaf-file-name="fragment_fly_play_jh.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_fly_play_jh.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="257" column="65" lean-forward="false" selection-start-line="257" selection-start-column="65" selection-end-line="257" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="android-designer2">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4860">
-              <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wifination.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/wifination.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3435">
-              <caret line="243" column="0" lean-forward="false" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -198,6 +178,7 @@
       <find>bisPathMode</find>
       <find>F_Sent</find>
       <find>path_icon</find>
+      <find>onClick</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -3576,9 +3557,9 @@
         <option value="$PROJECT_DIR$/jh_ui/src/main/res/values/styles_jh.xml" />
         <option value="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/wifination.java" />
         <option value="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/MyRipple.java" />
-        <option value="$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_fly_play_jh.xml" />
-        <option value="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java" />
         <option value="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/MyControl.java" />
+        <option value="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java" />
+        <option value="$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_fly_play_jh.xml" />
         <option value="$PROJECT_DIR$/jh_ui/build.gradle" />
       </list>
     </option>
@@ -3604,7 +3585,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -3661,7 +3643,21 @@
               <item name="jh_ui" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="joyhonest" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="jh_fly" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JH_Camera" type="1abcf292:AndroidViewProjectNode" />
+              <item name="jh_ui" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="joyhonest" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="jh_ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JH_Camera" type="1abcf292:AndroidViewProjectNode" />
+              <item name="jh_ui" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="joyhonest" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="wifination" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JH_Camera" type="1abcf292:AndroidViewProjectNode" />
@@ -3671,8 +3667,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3862,22 +3857,23 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1322" extended-state="0" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50664455" sideWeight="0.52859414" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5598007" sideWeight="0.43963462" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50664455" sideWeight="0.47140586" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5598007" sideWeight="0.5603654" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.49682286" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.6572677" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15131056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.65528196" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3890,7 +3886,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.49682286" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3904,7 +3899,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/symalibrary/src/main/java/com/joyhonest/jh_fly/BrowSelectFragment.java" />
     <entry file="file://$PROJECT_DIR$/symalibrary/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java" />
     <entry file="file://$PROJECT_DIR$/symalibrary/src/main/java/com/joyhonest/jh_fly/FlyPathFragment.java" />
     <entry file="file://$PROJECT_DIR$/symalibrary/src/main/java/com/joyhonest/jh_ui/MyControl.java" />
@@ -3984,13 +3978,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_start.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/content/ContextWrapper.java">
@@ -4098,17 +4092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_fly_play_jh.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4860">
-          <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joyhonest/syma_lib/StartActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -4127,7 +4110,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/Fly_PlayActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7125">
+        <state relative-caret-position="7170">
           <caret line="541" column="66" lean-forward="false" selection-start-line="541" selection-start-column="66" selection-end-line="541" selection-end-column="66" />
           <folding />
         </state>
@@ -4135,36 +4118,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPathFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4875">
+        <state relative-caret-position="4995">
           <caret line="359" column="31" lean-forward="false" selection-start-line="359" selection-start-column="20" selection-end-line="359" selection-end-column="31" />
           <folding>
             <marker date="1524020344000" expanded="true" signature="6986:7819" ph="{...}" />
-            <marker date="1524020344000" expanded="true" signature="7862:7928" ph="{...}" />
-            <marker date="1524020344000" expanded="true" signature="7974:8179" ph="{...}" />
-            <marker date="1524020344000" expanded="true" signature="8215:8743" ph="{...}" />
-            <marker date="1524020344000" expanded="true" signature="8827:8967" ph="{...}" />
-            <marker date="1524020344000" expanded="true" signature="9009:9066" ph="{...}" />
-            <marker date="1524020344000" expanded="true" signature="9105:10051" ph="{...}" />
-            <marker date="1524020344000" expanded="true" signature="10082:10175" ph="{...}" />
-            <marker date="1524020344000" expanded="true" signature="10420:10554" ph="{...}" />
-            <marker date="1524020344000" expanded="true" signature="10643:15428" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17295">
-          <caret line="1182" column="5" lean-forward="false" selection-start-line="1182" selection-start-column="5" selection-end-line="1182" selection-end-column="5" />
-          <folding>
-            <marker date="1524016988000" expanded="true" signature="34818:37189" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/MyControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1253">
+        <state relative-caret-position="36315">
           <caret line="2466" column="48" lean-forward="false" selection-start-line="2466" selection-start-column="48" selection-end-line="2466" selection-end-column="48" />
           <folding>
             <element signature="e#84303#84304#0" expanded="true" />
@@ -4173,10 +4137,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/JH_GLSurfaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="117" column="60" lean-forward="false" selection-start-line="117" selection-start-column="60" selection-end-line="117" selection-end-column="60" />
+          <folding>
+            <marker date="1524211153000" expanded="true" signature="34825:37196" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jh_ui/src/main/res/layout/fragment_fly_play_jh.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="257" column="65" lean-forward="false" selection-start-line="257" selection-start-column="65" selection-end-line="257" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="273">
+          <caret line="63" column="27" lean-forward="false" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
           <folding />
         </state>
       </provider>
