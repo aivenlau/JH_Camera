@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-//import com.joyhonest.jh_ui.JH_App;
-//import com.joyhonest.jh_ui.PlayActivity;
 
 public class StartActivity extends AppCompatActivity {
 

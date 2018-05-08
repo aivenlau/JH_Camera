@@ -120,6 +120,8 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         wifination.naSetVrBackground(true);
         JH_App.bFlyDisableAll = true;
+        JH_App.nType = JH_App.nStyle_fly;
+        JH_App.F_InitMusic();
 
         mAsker=new PermissionAsker(10,new Runnable() {
             @Override
@@ -198,6 +200,19 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
         F_InitFragment();
         RssiHander.postDelayed(RssiRunable,100);
 //        JH_Tools.InitEncoder(1280,720,25,(int)(1000*1000*4));//
+    }
+
+    @Subscriber(tag="HideSurfaceView")
+    private  void HideSurfaceView(boolean bHide)
+    {
+        if(bHide)
+        {
+            glSurfaceView.setVisibility(View.INVISIBLE);
+        }
+        else
+        {
+            glSurfaceView.setVisibility(View.VISIBLE);
+        }
     }
 
     @Subscriber(tag="NeedEnable_123")
@@ -1507,6 +1522,7 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
         }
         if (mActiveFragment == dispVideo_fragment) {
             dispVideo_fragment.F_Stop();
+            glSurfaceView.setVisibility(View.VISIBLE);
             gotoFragment(JH_Fly_Setting.Brow_Files_Fragment);
 
         }
@@ -1716,6 +1732,7 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
                 MyItemData data = JH_App.mGridList.get(ix);
                 dispVideo_fragment.F_Play(data.sPhonePath);
                 F_SetView(dispVideo_fragment);
+                glSurfaceView.setVisibility(View.INVISIBLE);
 
             }
         }

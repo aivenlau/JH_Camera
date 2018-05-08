@@ -641,6 +641,7 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
         if (v == Speed_Btn) {
             JH_App.bHiSpeed = !JH_App.bHiSpeed;
             F_DispSpeedIcon();
+            JH_App.F_PlaySpeed(JH_App.bHiSpeed);
         }
         if (v == Gsensor_Btn)
         {
@@ -655,12 +656,11 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
         }
 
         if (v == Adj_Btn) {
-
             //myControl.F_SetLeftRightAdj(0x80);
             //myControl.F_SetForwardBackAdj(0x80);
             //myControl.F_SetRotateAdj(0x80);
-            JH_App.F_PlayCenter();
             JH_App.bAdj = true;
+            JH_App.F_PlayCenter();
             Adj_Btn.setBackgroundResource(R.mipmap.adj_sel_fly_jh);
             new Handler().postDelayed(new Runnable() {
                 @Override
@@ -739,11 +739,13 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
                 }
 
                 if ((JH_App.nSdStatus & JH_App.LocalRecording) != 0) {
+                    JH_App.F_PlayStopRecord();
                     wifination.naStopRecord_All();
                     Photo_Record_Start_Btn.setBackgroundResource(R.mipmap.photo_record_icon_fly_jh);
                     // JH_App.F_Save2ToGallery(getActivity(), strRecordFilename,false);
                 } else {
                     strRecordFilename = JH_App.F_GetSaveName(false);
+                    JH_App.F_PlayStartRecord();
                     wifination.naStartRecord(strRecordFilename, wifination.TYPE_BOTH_PHONE_SD);
                     Record_Time_TextCtrl.setText("00:00");
                     Photo_Record_Start_Btn.setBackgroundResource(R.mipmap.photo_recording_icon_fly_jh);
