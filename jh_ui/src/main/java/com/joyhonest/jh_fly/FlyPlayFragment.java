@@ -106,6 +106,8 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
   //  private Button           return_btn_b;
 
 
+    private  boolean  bTestFlip=false;
+
     public FlyPlayFragment() {
         // Required empty public constructor
     }
@@ -520,6 +522,8 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
         F_DispGSensorIcon();
     }
 
+    boolean  bTest = true;
+
     @Override
     public void onClick(View v) {
         if(v != Return_Btn)
@@ -567,6 +571,19 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
         }
         */
         if (v == StopFly_Btn) {
+
+            /*
+            bTestFlip =!bTestFlip;
+            wifination.StartAudio(bTestFlip);
+
+
+
+            //wifination.naSetFlip(bTestFlip);
+            wifination.naSet3D(bTestFlip);
+            */
+
+
+
             JH_App.bStop = true;
             JH_App.bUp = false;
             JH_App.bDn = false;
@@ -587,6 +604,8 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
 
                 }
             }, 500);
+
+
         }
 
         if (v == UpDn_Btn) {
@@ -691,10 +710,13 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
 
 
         if (v == Floder_Btn) {
-            // wifination.naSetVideoSurface(null);
+
+
+
             F_SetNoGsensor();
             Integer nFragment = JH_Fly_Setting.Brow_Select_Fragment;
             EventBus.getDefault().post(nFragment, "gotoFragment");
+
 
         }
         if (v == Photo_Record_Start_Btn) {
@@ -746,7 +768,12 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
                 } else {
                     strRecordFilename = JH_App.F_GetSaveName(false);
                     JH_App.F_PlayStartRecord();
-                    wifination.naStartRecord(strRecordFilename, wifination.TYPE_BOTH_PHONE_SD);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            wifination.naStartRecord(strRecordFilename, wifination.TYPE_BOTH_PHONE_SD);
+                        }
+                    },500);
                     Record_Time_TextCtrl.setText("00:00");
                     Photo_Record_Start_Btn.setBackgroundResource(R.mipmap.photo_recording_icon_fly_jh);
                 }
@@ -839,7 +866,14 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
     public void F_DispPhoto_Record() {
 
         if (bPhoto) {
+
             Photo_Record_Start_Btn.setBackgroundResource(R.mipmap.photo_icon_fly_jh);
+            if ((JH_App.nSdStatus & JH_App.LocalRecording) != 0) {
+                wifination.naStopRecord_All();
+                Record_Time_TextCtrl.setVisibility(View.INVISIBLE);
+            }
+
+            /*
             if ((JH_App.nSdStatus & JH_App.LocalRecording) != 0)
             {
                 Record_Time_TextCtrl.setVisibility(View.VISIBLE);
@@ -848,12 +882,15 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
             {
                 Record_Time_TextCtrl.setVisibility(View.INVISIBLE);
             }
+            */
+
+
         } else {
 
-            if ((JH_App.nSdStatus & JH_App.LocalRecording) != 0) {
+            if ((JH_App.nSdStatus & JH_App.LocalRecording) != 0)
+            {
                 Record_Time_TextCtrl.setVisibility(View.VISIBLE);
                 Photo_Record_Start_Btn.setBackgroundResource(R.mipmap.photo_recording_icon_fly_jh);
-                //myControl.F_SetImage(R.mipmap.cir_back_fly_jh, R.mipmap.cir_fly_jh);
                 myControl.F_SetFlyRecord(true);
                 if(bControlUI) {
                     Fly_Camera_Btn.setBackgroundResource(R.mipmap.remote_control_fly_jh);
@@ -871,23 +908,18 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
             else
             {
                 Photo_Record_Start_Btn.setBackgroundResource(R.mipmap.photo_record_icon_fly_jh);
-                //myControl.F_SetImage(R.mipmap.cir_back_fly_jh_b, R.mipmap.cir_fly_jh);
-               // myControl.F_SetImage(R.mipmap.cir_back_fly_jh, R.mipmap.cir_fly_jh);
+
                 myControl.F_SetFlyRecord(false);
 
                 if(bControlUI) {
-                    //Fly_Camera_Btn.setBackgroundResource(R.mipmap.remote_control_fly_jh_b);
+
                     Fly_Camera_Btn.setBackgroundResource(R.mipmap.remote_control_fly_jh);
                 }
                 else
                 {
-                    //Fly_Camera_Btn.setBackgroundResource(R.mipmap.no_remote_fly_jh_b);
+
                     Fly_Camera_Btn.setBackgroundResource(R.mipmap.no_remote_fly_jh);
                 }
-
-                //Floder_Btn.setBackgroundResource(R.mipmap.folder_fly_jh_b);
-                //StopFly_Btn.setBackgroundResource(R.mipmap.stop_nor_fly_jh_b);
-                //UpDn_Btn.setBackgroundResource(R.mipmap.keyup_dn_fly_jh_b);
                 Floder_Btn.setBackgroundResource(R.mipmap.folder_fly_jh);
                 StopFly_Btn.setBackgroundResource(R.mipmap.stop_nor_fly_jh);
                 UpDn_Btn.setBackgroundResource(R.mipmap.keyup_dn_fly_jh);
@@ -1183,7 +1215,7 @@ Data9：Data0- Data8异或后，再加0X55
         }
         cmd[9] = (byte) (((cmd[0] ^ cmd[1] ^ cmd[2] ^ cmd[3] ^ cmd[4] ^ cmd[5] ^ cmd[6] ^ cmd[7] ^ cmd[8]) & 0xFF) + 0x55);
         wifination.naSentCmd(cmd, 10);
-        Log.e("Cmd:  ","Sent NromalComd  X1=" +X1+" Y1="+Y1+" X2="+X2+" Y2="+Y2+"  temp="+nTestTemp);
+      //  Log.e("Cmd:  ","Sent NromalComd  X1=" +X1+" Y1="+Y1+" X2="+X2+" Y2="+Y2+"  temp="+nTestTemp);
 
 
         /*
