@@ -126,6 +126,7 @@ public class JH_App {
     public static boolean bBrowPhoto = false;
 
     public static boolean b720P = false;
+    public static boolean bRecordVoice = true;
 
     // private static JH_App singleton = null;
     public static String sWifi = "";
@@ -273,7 +274,7 @@ public class JH_App {
             mGridList = new ArrayList<MyItemData>();
         }
         F_CreateLocalDir(LocalPhoto,LocalVideo,SDPhoto,SDVideo);
-      //  F_InitMusic();
+        //  F_InitMusic();
     }
 
     public static void F_CreateLocalFlyDefalutDir()
@@ -448,7 +449,7 @@ public class JH_App {
             location.setLongitude(-400);
             EventBus.getDefault().post(location, "GPS_LocationChanged");
         }
-            public void onProviderEnabled(String provider) {
+        public void onProviderEnabled(String provider) {
         }
 
         @Override
@@ -565,7 +566,7 @@ public class JH_App {
             music_video_stop = soundPool.load(mContext, R.raw.video_stop_fly, 1);;
         }
         else
-            {
+        {
             music_photo = soundPool.load(mContext, R.raw.photo_m_fly, 1);
         }
 
@@ -586,14 +587,14 @@ public class JH_App {
             {
                 values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
                 values.put(MediaStore.Images.Media.DATA, filename);
-                 Uri uri = contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                Uri uri = contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
                         values);
             }
             else
             {
                 values.put(MediaStore.Video.Media.MIME_TYPE, "video/mp4");
                 values.put(MediaStore.Video.Media.DATA, filename);
-                 Uri uri = contentResolver.insert(MediaStore.Video.Media.EXTERNAL_CONTENT_URI,
+                Uri uri = contentResolver.insert(MediaStore.Video.Media.EXTERNAL_CONTENT_URI,
                         values);
             }
             Uri uri1 = Uri.parse("file://" + filename);
@@ -614,7 +615,7 @@ public class JH_App {
         ContentResolver resolver = mContext.getContentResolver();
         Cursor cursor;
         {
-           // cursor = MediaStore.Images.Media.query(resolver, MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new String[]{MediaStore.Images.Media._ID}, MediaStore.Images.Media.DATA + "=?",
+            // cursor = MediaStore.Images.Media.query(resolver, MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new String[]{MediaStore.Images.Media._ID}, MediaStore.Images.Media.DATA + "=?",
             //        new String[]{imgPath}, null);
             if(stype.equalsIgnoreCase("jpg") || stype.equalsIgnoreCase("png")) {
                 cursor = resolver.query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new String[]{MediaStore.Images.Media._ID}, MediaStore.Images.Media.DATA + "=?",
@@ -799,7 +800,8 @@ public class JH_App {
 
 
     //获取是否存在NavigationBar
-    public static void checkDeviceHasNavigationBar(Context context) {
+    public static void checkDeviceHasNavigationBar(Context context)
+    {
 
         /*
         Activity activity = (Activity) context;
@@ -1071,7 +1073,7 @@ public class JH_App {
             wifination.naSetCustomer("sima");
         else
             wifination.naSetCustomer(" ");
-       // wifination.naSetVideoSurface(surface); //surfaceHolder.getSurface());
+        // wifination.naSetVideoSurface(surface); //surfaceHolder.getSurface());
         String str = "";
         int re = -1;
         if (JH_App.nICType == wifination.IC_GK) {
@@ -1093,24 +1095,27 @@ public class JH_App {
 
         if (JH_App.nICType == wifination.IC_GP) {
             str = "http://192.168.25.1:8080/?action=stream";
-            wifination.naInit(str);
+
+            re = wifination.naInit(str);
+            if (re == 0)
+                wifination.naPlay();
         }
 
         if (JH_App.nICType == wifination.IC_GPRTSP) {
-            str = "rtsp://192.168.26.1:8080/?action=stream";
+            //str = "rtsp://192.168.26.1:8080/?action=stream";
+            str = "rtsp://192.168.25.1:8080/?action=stream";
             re = wifination.naInit(str);
             if (re == 0)
                 wifination.naPlay();
         }
 
         if (JH_App.nICType == wifination.IC_GPH264) {
-            str = "rtsp://192.168.27.1:8080/?action=stream";
-            //str = "rtsp://192.168.16.1/stream0";
+            str = "";
             wifination.naInit(str);
         }
 
         if (JH_App.nICType == wifination.IC_GPRTP) {
-            str = "192.168.28.1:19200";
+            str = "";
             wifination.naInit(str);
         }
         if (JH_App.nICType == wifination.IC_GPRTPB) {
@@ -1155,7 +1160,7 @@ public class JH_App {
         MediaMetadataRetriever retriever = new MediaMetadataRetriever();
         try {
             retriever.setDataSource(videoPath);
-           // bitmap = retriever.getFrameAtTime(0, MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
+            // bitmap = retriever.getFrameAtTime(0, MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
             bitmap = retriever.getFrameAtTime();
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
@@ -1213,12 +1218,12 @@ public class JH_App {
             wfile.delete();
         }
 
-            try {
-                wfile.createNewFile();
-            }catch (IOException e)
-            {
+        try {
+            wfile.createNewFile();
+        }catch (IOException e)
+        {
 
-            }
+        }
         wfile.setWritable(true);
 
         BufferedWriter wr=null;

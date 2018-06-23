@@ -68,37 +68,14 @@ public class wifination {
             Ule.printStackTrace();
         } finally {
 
-            //lstFile = new ArrayList<String>();  //结果 List
-            //String  sa= "/proc/sys/net/ipv4/tcp_slow_start_after_idle";
-            //String  sa= "/proc/sys/net/ipv4";
-            //GetFilesA(sa,null,false);
-            //JH_Tools.F_InitDecord(1280,720);
-/*
-                if(Build.VERSION.SDK_INT>=18)
-                {
-                    for(int j = MediaCodecList.getCodecCount() - 1; j >= 0; j--)
-                    {
-                        MediaCodecInfo codecInfo = MediaCodecList.getCodecInfoAt(j);
-                        String[] types = codecInfo.getSupportedTypes();
-                        for (int i = 0; i < types.length; i++) {
-                            if (types[i].equalsIgnoreCase("video/avc"))
-                            {
-                                String aa = codecInfo.getName();
-                                Log.e("Decordwe" ,"Decorder: "+ aa);
-                            }
-                        }
-                    }
-            }
-            */
             mDirectBuffer = ByteBuffer.allocateDirect(BMP_Len + 50);     //获取每帧数据，主要根据实际情况，分配足够的空间。
             naSetDirectBuffer(mDirectBuffer, BMP_Len + 50);
-//            mDirectBufferYUV = ByteBuffer.allocateDirect(BMP_Len);
-            //           naSetDirectBufferYUV(mDirectBufferYUV, BMP_Len);
-            // JH_Tools.AvcEncoder(1280,720,25,2500000);
         }
     }
 
-    private wifination() {
+    private wifination()
+    {
+
     }
 
     //静态工厂方法
@@ -266,7 +243,7 @@ public class wifination {
     }
 
 
-
+/*
     private static String intToIp(int i) {
         return (i & 0xFF) + "." + ((i >> 8) & 0xFF) + "." + ((i >> 16) & 0xFF) + "." + ((i >> 24) & 0xFF);
     }
@@ -291,33 +268,9 @@ public class wifination {
 
         int ip = info.getIpAddress();
         return ip;
-        /*
-        String sIP = intToIp(info.getIpAddress());
 
-        int nICType = wifination.IC_NO;
-
-        if (sIP.startsWith("175.16.10")) {
-            nICType = wifination.IC_GKA;
-        } else if (sIP.startsWith("192.168.234")) {
-            nICType = wifination.IC_GK;
-        } else if (sIP.startsWith("192.168.25")) {
-            nICType = wifination.IC_GP;
-        } else if (sIP.startsWith("192.168.26")) {
-            nICType = wifination.IC_GPRTSP;
-        } else if (sIP.startsWith("192.168.27")) {
-            nICType = wifination.IC_GPH264;
-        } else if (sIP.startsWith("192.168.28")) {
-            nICType = wifination.IC_GPRTP;
-        } else if (sIP.startsWith("192.168.29")) {
-            nICType = wifination.IC_GPRTPB;
-        } else if (sIP.startsWith("192.168.30")) {
-            nICType = wifination.IC_GPH264A;
-        } else if (sIP.startsWith("192.168.123")) {
-            nICType = wifination.IC_SN;
-        }
-        return nICType;
-        */
     }
+    */
 
     public static void F_AdjBackGround(Context context, int bakid) {
         Bitmap bmp = null;
@@ -429,7 +382,7 @@ public class wifination {
             EventBus.getDefault().post(cmd, "GetWifiInfoData");
         }
         else {
-            Integer ix = nStatus;
+            Integer ix = nStatus;                //返回 模块按键
             Log.e(TAG,"Get data = "+nStatus);
             EventBus.getDefault().post(ix, "OnGetGP_Status");
         }
@@ -481,10 +434,12 @@ public class wifination {
     }
 
     /////// 以下 SYMA 不使用 --------
-    private static void OnKeyPress(int nStatus) {
-
+    private static void OnKeyPress(int nStatus)
+    {
         Integer n = nStatus;
+        Log.e(TAG,"Get Key = "+nStatus);
         EventBus.getDefault().post(n, "key_Press");
+        EventBus.getDefault().post(n, "Key_Pressed");
     }
 
 

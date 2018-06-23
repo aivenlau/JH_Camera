@@ -123,7 +123,7 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         wifination.appContext = getApplicationContext();
-        wifination.naSetRecordAudio(true);
+        wifination.naSetRecordAudio(JH_App.bRecordVoice);
         wifination.naSetVrBackground(true);
         JH_App.bFlyDisableAll = true;
         JH_App.nType = JH_App.nStyle_fly;
@@ -139,12 +139,7 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
             @Override
             public void run()
             {
-
-
                 F_DispAlert();
-
-                //Toast.makeText(Fly_PlayActivity.this, "The necessary permission denied, the application exit",
-                //        Toast.LENGTH_SHORT).show();
 
             }
         }).askPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.RECORD_AUDIO);
@@ -165,6 +160,7 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
         dialog.show();
     }
 
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -173,8 +169,8 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
     @Subscriber(tag="GetWifiInfoData")
     private  void GetWifiInfoData(byte[] cmd)
     {
-         byte nType = cmd[40];
-         Log.e("GET Wifi Type",""+nType);
+        byte nType = cmd[40];
+        Log.e("GET Wifi Type",""+nType);
     }
 
     private  void F_Init()
@@ -748,10 +744,10 @@ public class Fly_PlayActivity extends AppCompatActivity implements View.OnClickL
             if((JH_App.nSdStatus & JH_App.LocalRecording)==0)
             {
                 JH_App.nSdStatus |= JH_App.LocalRecording;
-                    if(flyPlayFragment!=null)
-                    {
-                        flyPlayFragment.F_DispPhoto_Record();
-                    }
+                if(flyPlayFragment!=null)
+                {
+                    flyPlayFragment.F_DispPhoto_Record();
+                }
             }
             JH_App.nSdStatus |= JH_App.LocalRecording;
         } else {
