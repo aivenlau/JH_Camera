@@ -10,28 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac35d5e2-61fb-4f84-a823-9db9d29a5b6c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/api-versions-14-27.0.1.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/constraint/group-index.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/build.gradle" afterPath="$PROJECT_DIR$/jh_ui/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/jh_ui.iml" afterPath="$PROJECT_DIR$/jh_ui/jh_ui.iml" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/libs/armeabi-v7a/libjh_wifi.so" afterPath="$PROJECT_DIR$/jh_ui/libs/armeabi-v7a/libjh_wifi.so" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/Fly_PlayActivity.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/Fly_PlayActivity.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/JH_App.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/JH_App.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/JH_Tools.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/JH_Tools.java" />
-      <change beforePath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/wifination.java" afterPath="$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/wifination.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,8 +44,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jh_ui/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="52" column="47" lean-forward="false" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+            <state relative-caret-position="57">
+              <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -74,7 +54,7 @@
       <file leaf-file-name="wifination.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/wifination.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2043">
+            <state relative-caret-position="6315">
               <caret line="441" column="53" lean-forward="false" selection-start-line="441" selection-start-column="53" selection-end-line="441" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -134,7 +114,7 @@
       <file leaf-file-name="FlyPlayFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5275">
+            <state relative-caret-position="7740">
               <caret line="549" column="0" lean-forward="false" selection-start-line="549" selection-start-column="0" selection-end-line="549" selection-end-column="0" />
               <folding />
             </state>
@@ -144,7 +124,7 @@
       <file leaf-file-name="Fly_PlayActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/Fly_PlayActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1894">
+            <state relative-caret-position="2385">
               <caret line="223" column="56" lean-forward="false" selection-start-line="223" selection-start-column="56" selection-end-line="223" selection-end-column="56" />
               <folding />
             </state>
@@ -154,7 +134,7 @@
       <file leaf-file-name="JH_App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/JH_App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
+            <state relative-caret-position="11955">
               <caret line="860" column="64" lean-forward="false" selection-start-line="860" selection-start-column="64" selection-end-line="860" selection-end-column="64" />
               <folding />
             </state>
@@ -164,7 +144,7 @@
       <file leaf-file-name="JH_Tools.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/JH_Tools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
+            <state relative-caret-position="2595">
               <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
               <folding />
             </state>
@@ -3576,14 +3556,13 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
     <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1322" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="AndroidView" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -3603,30 +3582,7 @@
           <expand>
             <path>
               <item name="JH_Camera" type="1abcf292:AndroidViewProjectNode" />
-              <item name="jh_ui" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="JH_Camera" type="1abcf292:AndroidViewProjectNode" />
-              <item name="jh_ui" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="JH_Camera" type="1abcf292:AndroidViewProjectNode" />
-              <item name="jh_ui" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="jh_fly" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JH_Camera" type="1abcf292:AndroidViewProjectNode" />
-              <item name="jh_ui" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="jh_ui" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JH_Camera" type="1abcf292:AndroidViewProjectNode" />
-              <item name="jh_ui" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="wifination" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
               <item name="JH_Camera" type="1abcf292:AndroidViewProjectNode" />
@@ -3642,6 +3598,23 @@
             <path>
               <item name="JH_Camera" type="b2602c69:ProjectViewProjectNode" />
               <item name="JH_Camera" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="JH_Camera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JH_Camera" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JH_Camera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JH_Camera" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="4.4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JH_Camera" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JH_Camera" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="buildOutputCleanup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JH_Camera" type="b2602c69:ProjectViewProjectNode" />
@@ -3854,8 +3827,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="23" width="2560" height="1322" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="2560" height="1322" extended-state="0" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3863,22 +3835,22 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5598007" sideWeight="0.46505162" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5598007" sideWeight="0.4666402" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5598007" sideWeight="0.53494835" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5598007" sideWeight="0.5333598" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.49682286" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15131056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15131056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.64138204" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39950165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39950165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4076,7 +4048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3855">
           <caret line="257" column="65" lean-forward="false" selection-start-line="257" selection-start-column="65" selection-end-line="257" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4084,14 +4055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joyhonest/syma_lib/StartActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -4128,7 +4091,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/FlyPlayFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5275">
+        <state relative-caret-position="7740">
           <caret line="549" column="0" lean-forward="false" selection-start-line="549" selection-start-column="0" selection-end-line="549" selection-end-column="0" />
           <folding />
         </state>
@@ -4136,7 +4099,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/JH_Tools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
+        <state relative-caret-position="2595">
           <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
           <folding />
         </state>
@@ -4144,7 +4107,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/wifination/wifination.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2043">
+        <state relative-caret-position="6315">
           <caret line="441" column="53" lean-forward="false" selection-start-line="441" selection-start-column="53" selection-end-line="441" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -4156,7 +4119,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_fly/Fly_PlayActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1894">
+        <state relative-caret-position="2385">
           <caret line="223" column="56" lean-forward="false" selection-start-line="223" selection-start-column="56" selection-end-line="223" selection-end-column="56" />
           <folding />
         </state>
@@ -4164,7 +4127,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/src/main/java/com/joyhonest/jh_ui/JH_App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
+        <state relative-caret-position="11955">
           <caret line="860" column="64" lean-forward="false" selection-start-line="860" selection-start-column="64" selection-end-line="860" selection-end-column="64" />
           <folding />
         </state>
@@ -4172,8 +4135,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jh_ui/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="52" column="47" lean-forward="false" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+        <state relative-caret-position="57">
+          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/joyhonest/syma_lib/StartActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
           <folding />
         </state>
       </provider>
