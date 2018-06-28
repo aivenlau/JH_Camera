@@ -4,7 +4,7 @@ package com.joyhonest.jh_fly;
 import android.animation.ObjectAnimator;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -773,7 +773,7 @@ public class FlyPlayFragment extends Fragment implements View.OnClickListener {
                         public void run() {
                             wifination.naStartRecord(strRecordFilename, wifination.TYPE_BOTH_PHONE_SD);
                         }
-                    },500);
+                    },800);
                     Record_Time_TextCtrl.setText("00:00");
                     Photo_Record_Start_Btn.setBackgroundResource(R.mipmap.photo_recording_icon_fly_jh);
                 }

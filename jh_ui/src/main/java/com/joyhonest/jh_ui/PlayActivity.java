@@ -3,9 +3,9 @@ package com.joyhonest.jh_ui;
 
 import android.Manifest;
 import android.animation.ObjectAnimator;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+//import android.app.Fragment;
+//import android.app.FragmentManager;
+//import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -19,6 +19,9 @@ import android.os.HandlerThread;
 //import android.support.v4.app.FragmentManager;
 //import android.support.v4.app.FragmentTransaction;
 import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
@@ -158,17 +161,14 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private Handler RssiHander;
     private Runnable RssiRunable;
     private byte[] mData = null;
-
     private  boolean  bGoFly=false;
-
     private PermissionAsker mAsker;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-
         JH_App.F_InitMusic();
-
 
 /*
         if(JH_App.F_GetWifiType()==wifination.IC_GPH264A)
@@ -180,7 +180,9 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 */
+
         bGoFly = false;
+        wifination.appContext = getApplicationContext();
         wifination.naSetVrBackground(false);
 
         mAsker=new PermissionAsker(10,new Runnable() {
@@ -230,7 +232,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         JH_App.checkDeviceHasNavigationBar(this);
         JH_App.F_Clear_not_videoFiles();
         glSurfaceView = (JH_GLSurfaceView) findViewById(R.id.surfaceView_gl);
-        mFragmentMan = getFragmentManager();// getSupportFragmentManager();
+        mFragmentMan = getSupportFragmentManager();//  getFragmentManager();// getSupportFragmentManager();
         Fragment_Layout = (RelativeLayout) findViewById(R.id.Fragment_Layout);
         RssiHander = new Handler();
         RssiRunable = new Runnable() {
@@ -284,7 +286,15 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    @Subscriber(tag="OnGetGP_Status")
+    private  void OnGetGP_Status(int n)
+    {
 
+        Log.e("GetData","Key = "+n);
+    }
+
+
+    boolean bFirst = false;
 
     private void F_InitFragment() {
         Select_Video_Photo_Fragment = new Select_Video_Photo_Fragment();
@@ -308,7 +318,10 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
         F_OpenCamera(true);
 
+        bFirst = true;
 
+
+        /*
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -326,7 +339,25 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 }, 20);
             }
         }, 50);
+        */
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(bGoFly)
+            return;
+        JH_App.checkDeviceHasNavigationBar(this);
+        if(bFirst)
+        {
+            bFirst=false;
+            FragmentTransaction transactionA = mFragmentMan.beginTransaction();
+            hideFragments(transactionA);
+            transactionA.commit();
+            dispVideo_fragment.F_SetBackImg(R.mipmap.return_nor_1_jh);
+            F_SetView(main_fragment);
+        }
     }
 
     private void F_SetView(final Fragment fragment) {
@@ -556,29 +587,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if(bGoFly)
-            return;
-        JH_App.checkDeviceHasNavigationBar(this);
-        ////Byd
 
-
-
-
-
-/*
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                openHandler.removeCallbacksAndMessages(null);
-                openHandler.postDelayed(openRunnable,25);
-            }
-        }, 30);
-*/
-
-    }
 
     @Override
     protected void onPause() {

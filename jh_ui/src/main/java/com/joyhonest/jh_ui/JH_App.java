@@ -1,7 +1,7 @@
 package com.joyhonest.jh_ui;
 
 import android.app.Activity;
-import android.app.Application;
+
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -51,12 +51,11 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Collections;
+
 import java.util.List;
 
 import static android.content.Context.WIFI_SERVICE;
 
-//import com.autonavi.ae.utils.NaviUtils;
 import com.joyhonest.wifination.wifination;
 
 import org.simple.eventbus.EventBus;
@@ -274,7 +273,7 @@ public class JH_App {
             mGridList = new ArrayList<MyItemData>();
         }
         F_CreateLocalDir(LocalPhoto,LocalVideo,SDPhoto,SDVideo);
-        //  F_InitMusic();
+      //  F_InitMusic();
     }
 
     public static void F_CreateLocalFlyDefalutDir()
@@ -449,7 +448,7 @@ public class JH_App {
             location.setLongitude(-400);
             EventBus.getDefault().post(location, "GPS_LocationChanged");
         }
-        public void onProviderEnabled(String provider) {
+            public void onProviderEnabled(String provider) {
         }
 
         @Override
@@ -566,7 +565,7 @@ public class JH_App {
             music_video_stop = soundPool.load(mContext, R.raw.video_stop_fly, 1);;
         }
         else
-        {
+            {
             music_photo = soundPool.load(mContext, R.raw.photo_m_fly, 1);
         }
 
@@ -587,14 +586,14 @@ public class JH_App {
             {
                 values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
                 values.put(MediaStore.Images.Media.DATA, filename);
-                Uri uri = contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                 Uri uri = contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
                         values);
             }
             else
             {
                 values.put(MediaStore.Video.Media.MIME_TYPE, "video/mp4");
                 values.put(MediaStore.Video.Media.DATA, filename);
-                Uri uri = contentResolver.insert(MediaStore.Video.Media.EXTERNAL_CONTENT_URI,
+                 Uri uri = contentResolver.insert(MediaStore.Video.Media.EXTERNAL_CONTENT_URI,
                         values);
             }
             Uri uri1 = Uri.parse("file://" + filename);
@@ -615,7 +614,7 @@ public class JH_App {
         ContentResolver resolver = mContext.getContentResolver();
         Cursor cursor;
         {
-            // cursor = MediaStore.Images.Media.query(resolver, MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new String[]{MediaStore.Images.Media._ID}, MediaStore.Images.Media.DATA + "=?",
+           // cursor = MediaStore.Images.Media.query(resolver, MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new String[]{MediaStore.Images.Media._ID}, MediaStore.Images.Media.DATA + "=?",
             //        new String[]{imgPath}, null);
             if(stype.equalsIgnoreCase("jpg") || stype.equalsIgnoreCase("png")) {
                 cursor = resolver.query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new String[]{MediaStore.Images.Media._ID}, MediaStore.Images.Media.DATA + "=?",
@@ -1068,12 +1067,13 @@ public class JH_App {
         //JH_App.nICType = wifination.IC_GPRTSP;
         //JH_App.nICType = wifination.IC_SN;
         //JH_App.nICType = wifination.IC_GPRTP;
-        wifination.naSetIcType(JH_App.nICType);
+
+        //wifination.naSetIcType(JH_App.nICType);
         if (JH_App.bIsSyMa)
             wifination.naSetCustomer("sima");
         else
             wifination.naSetCustomer(" ");
-        // wifination.naSetVideoSurface(surface); //surfaceHolder.getSurface());
+       // wifination.naSetVideoSurface(surface); //surfaceHolder.getSurface());
         String str = "";
         int re = -1;
         if (JH_App.nICType == wifination.IC_GK) {
@@ -1094,16 +1094,15 @@ public class JH_App {
         }
 
         if (JH_App.nICType == wifination.IC_GP) {
-            str = "http://192.168.25.1:8080/?action=stream";
-
+            //str = "http://192.168.25.1:8080/?action=stream";
+            str = "rtsp://192.168.25.1:8080/?action=stream";
             re = wifination.naInit(str);
             if (re == 0)
                 wifination.naPlay();
         }
 
         if (JH_App.nICType == wifination.IC_GPRTSP) {
-            //str = "rtsp://192.168.26.1:8080/?action=stream";
-            str = "rtsp://192.168.25.1:8080/?action=stream";
+            str = "rtsp://192.168.26.1:8080/?action=stream";
             re = wifination.naInit(str);
             if (re == 0)
                 wifination.naPlay();
@@ -1160,7 +1159,7 @@ public class JH_App {
         MediaMetadataRetriever retriever = new MediaMetadataRetriever();
         try {
             retriever.setDataSource(videoPath);
-            // bitmap = retriever.getFrameAtTime(0, MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
+           // bitmap = retriever.getFrameAtTime(0, MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
             bitmap = retriever.getFrameAtTime();
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
@@ -1218,12 +1217,12 @@ public class JH_App {
             wfile.delete();
         }
 
-        try {
-            wfile.createNewFile();
-        }catch (IOException e)
-        {
+            try {
+                wfile.createNewFile();
+            }catch (IOException e)
+            {
 
-        }
+            }
         wfile.setWritable(true);
 
         BufferedWriter wr=null;

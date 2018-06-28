@@ -1,19 +1,17 @@
 package com.joyhonest.jh_ui;
 
 
-import android.app.Fragment;
-import android.content.ContentValues;
-import android.content.Context;
-import android.content.Intent;
+//import android.app.Fragment;
+
 import android.content.pm.ActivityInfo;
-import android.net.Uri;
+
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
-import android.provider.MediaStore;
+
 import android.support.constraint.ConstraintLayout;
 import android.support.constraint.ConstraintSet;
-//import android.support.v4.app.Fragment;
+
+import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Surface;
@@ -23,13 +21,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.joyhonest.jh_fly.JH_Fly_Setting;
+
 import com.joyhonest.wifination.wifination;
 
 import org.simple.eventbus.EventBus;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+
 
 
 /**
@@ -492,7 +489,7 @@ public class main_fragment extends Fragment implements View.OnClickListener {
             }
             cmd[9] = (byte) (((cmd[0] ^ cmd[1] ^ cmd[2] ^ cmd[3] ^ cmd[4] ^ cmd[5] ^ cmd[6] ^ cmd[7] ^ cmd[8]) & 0xFF) + 0x55);
             wifination.naSentCmd(cmd, 10);
-            Log.e("Cmd:  ","Sent NromalComd  X1=" +X1+" Y1="+Y1+" X2="+X2+" Y2="+Y2);
+         //   Log.e("Cmd:  ","Sent NromalComd  X1=" +X1+" Y1="+Y1+" X2="+X2+" Y2="+Y2);
 
         } else {
 
