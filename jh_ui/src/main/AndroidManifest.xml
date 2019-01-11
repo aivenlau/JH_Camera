@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
-
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true"/>
@@ -21,22 +20,32 @@
             android:name="android.max_aspect"
             android:value="2.1"/>
         <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
-        <!--service android:name="com.amap.api.location.APSService"/ -->
-        <!--meta-data
+        <!-- service android:name="com.amap.api.location.APSService"/ -->
+        <!--
+            meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="b6049061ecd36d4ebb21c24920b78326"/ -->
+            android:value="b6049061ecd36d4ebb21c24920b78326"/
+        -->
 
         <activity
-            android:name="com.joyhonest.jh_ui.PlayActivity"
+            android:name=".PlayActivity"
             android:screenOrientation="sensorLandscape">
         </activity>
         <activity
             android:name="com.joyhonest.jh_fly.Fly_PlayActivity"
             android:screenOrientation="sensorLandscape">
         </activity>
-
-
-
+        <activity
+            android:name="com.joyhonest.jh_fpv.FpvActivity"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity
+            android:name="com.joyhonest.jh_fpv.BrowActivity"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity android:name="com.joyhonest.jh_fpv.grid_fpv"
+                  android:screenOrientation="sensorLandscape">
+        </activity>
     </application>
 
 </manifest>

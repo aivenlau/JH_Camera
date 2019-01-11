@@ -17,14 +17,14 @@
             android:layout_height="100dp"
             android:id="@+id/Grid_imageView1"
             android:scaleType="centerCrop"
-            android:src="@mipmap/background" />
+            android:src="@mipmap/loading" />
 
         <ImageView
             android:id="@+id/video_bg"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:scaleType="centerCrop"
-            android:background="@mipmap/video_bg"
+            android:background="@mipmap/loading"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:visibility="invisible"/>
@@ -37,7 +37,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="4dp"
             android:layout_marginTop="2dp"
-            android:background="@mipmap/selectedflag_no"/>
+            android:background="@mipmap/selectedflag_fly_0_jh"/>
 
 
 
@@ -51,13 +51,13 @@
         android:visibility="gone"
         android:layout_gravity="center" />
 
+    <!-- android:progressDrawable="@drawable/progressbar" -->
     <ProgressBar
         android:layout_width="100dp"
         android:layout_height="10dp"
         android:id="@+id/Grid_progressBar1"
         style="?android:attr/progressBarStyleHorizontal"
         android:max="100"
-        android:progressDrawable="@drawable/progressbar"
         android:layout_gravity="center" />
 
     <Space

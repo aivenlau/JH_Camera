@@ -10,4 +10,13 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Multi_media">Multi-media</string>
+
+    <string name="Sure_you_want_to_delete">Sure you delete files?</string>
+    <string name="Cancel">Cancel</string>
+    <string name="OK">OK</string>
+
+    Cancel
+
+
+
 </resources>

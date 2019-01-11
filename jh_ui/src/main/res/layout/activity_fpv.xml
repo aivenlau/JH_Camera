@@ -1,10 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/loginbackground_jh"
     tools:context="com.joyhonest.jh_fpv.FpvActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <com.joyhonest.wifination.JH_GLSurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.joyhonest.wifination.JH_GLSurfaceView>
+
+
+    <LinearLayout
+        android:id="@+id/flashView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50ffffff"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_photp"
+            android:layout_width="79dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/photo_jh_fpv"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="79dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/video_jh_fpv"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_brow"
+            android:layout_width="79dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/brow_jh_fpv"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_wifi"
+            android:layout_width="79dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/wifi_04_jh_fpv"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="79dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/back_jh_fpv"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/RectimeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="00:00"
+        android:textColor="#FFFF0000"
+        android:textSize="22dp"
+        android:visibility="invisible"/>
+</RelativeLayout>

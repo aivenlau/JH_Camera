@@ -1,4 +1,4 @@
-package com.joyhonest.wifi_check;
+package com.joyhonest.jh_fpv;
 
 import android.graphics.Bitmap;
 

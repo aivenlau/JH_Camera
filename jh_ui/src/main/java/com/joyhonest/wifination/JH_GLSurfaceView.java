@@ -1,19 +1,10 @@
 package com.joyhonest.wifination;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
+
 import android.opengl.GLSurfaceView;
-import android.opengl.GLU;
-import android.opengl.GLUtils;
+
 import android.util.AttributeSet;
-
-import com.joyhonest.jh_ui.R;
-
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.FloatBuffer;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -25,7 +16,7 @@ import javax.microedition.khronos.opengles.GL10;
 public class JH_GLSurfaceView extends GLSurfaceView {
 
 
-    public  boolean  bDraw=true;
+    public boolean bDraw = true;
 
     public JH_GLSurfaceView(Context context_) {
         super(context_);
@@ -60,14 +51,18 @@ public class JH_GLSurfaceView extends GLSurfaceView {
             @Override
             public void onDrawFrame(GL10 gl) {
                 {
-                    if(bDraw)
+                    if (bDraw)
                         wifination.drawFrame();
                 }
             }
         });
     }
 
-
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        wifination.release();
+    }
 
     public static native int naDecordInit();
 

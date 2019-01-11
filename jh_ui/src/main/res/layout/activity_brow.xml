@@ -1,10 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.joyhonest.jh_fpv.BrowActivity">
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/selected_bg_jh"
+        tools:context="com.joyhonest.jh_fpv.BrowActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_Photos"
+        android:layout_width="136dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/center_view"
+        android:background="@mipmap/showphotofolder_nor_jh"/>
+
+    <Space
+        android:id="@+id/center_view"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_Videos"
+        android:layout_width="136dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/center_view"
+        android:background="@mipmap/showvideofolder_nor_jh"/>
+
+    <Button
+        android:id="@+id/btn_Exit_Brow"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="30dp"
+        android:background="@mipmap/return_nor_1_jh"/>
+
+
+    <com.joyhonest.jh_fpv.WaitView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:id="@+id/WaitView"
+        android:visibility="visible">
+
+    </com.joyhonest.jh_fpv.WaitView>
+
+    <TextView
+        android:id="@+id/TotalPhotosView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center_view"
+        android:layout_alignEnd="@+id/btn_Photos"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="3dp"
+        android:elevation="24dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFFFF"/>
+
+    <TextView
+        android:id="@+id/TotalVideosView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center_view"
+        android:layout_alignEnd="@+id/btn_Videos"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="3dp"
+        android:elevation="24dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFFFF"/>
+
+</RelativeLayout>
