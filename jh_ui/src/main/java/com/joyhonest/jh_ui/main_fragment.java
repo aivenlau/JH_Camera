@@ -272,7 +272,7 @@ public class main_fragment extends Fragment implements View.OnClickListener {
             But_KeyUp.setVisibility(View.VISIBLE);
             But_KeyDn.setVisibility(View.VISIBLE);
             But_KeyDn.setBackgroundResource(R.mipmap.landing_nor_jh);
-            wifination.naGkASetRecordResolution(true);
+            wifination.naGkASetRecordResolution(false);
             return;
         }
         String str = wifination.naGetControlType();
@@ -910,12 +910,8 @@ public class main_fragment extends Fragment implements View.OnClickListener {
             } else {
                 sRecordFileName = JH_App.F_GetSaveName(false);
                 wifination.naStartRecord(sRecordFileName, wifination.TYPE_BOTH_PHONE_SD);
-                //JH_App.nRecTime = System.currentTimeMillis() / 1000;
-                //JH_App.nRecTime = 0;
                 RecordTime_textView.setText("00:00");
-                //NSString *str = [self F_GetSaveName:NO];
-                //[self.wifiCamera   naStartRecord:str SaveTyoe:TYPE_BOTH_PHONE_SD Destination:TYPE_DEST_SNADBOX];
-                //_nRecTime=[[NSDate date] timeIntervalSince1970] * 1000;
+
             }
         }
     }
@@ -1064,21 +1060,6 @@ public class main_fragment extends Fragment implements View.OnClickListener {
             nMin = 0;
         int nSec = (int) (sec % 60);
         String str = String.format("%02d:%02d", nMin, nSec);
-
-        /*
-        long sec = System.currentTimeMillis() / 1000;
-        */
-        /*
-        if((JH_App.nSdStatus & JH_App.Status_Connected) != 0) {
-            JH_App.nRecTime++;
-        }
-
-        long sec = JH_App.nRecTime/2;
-        //sec = sec - JH_App.nRecTime;
-        int nMin = (int) (sec / 60);
-        int nSec = (int) (sec % 60);
-        */
-
 
         RecordTime_textView.setText(str);
 

@@ -29,21 +29,26 @@
 
         <activity
             android:name=".PlayActivity"
+            android:theme="@style/AppTheme_jhfpv"
             android:screenOrientation="sensorLandscape">
         </activity>
         <activity
+            android:theme="@style/AppTheme_jhfpv"
             android:name="com.joyhonest.jh_fly.Fly_PlayActivity"
             android:screenOrientation="sensorLandscape">
         </activity>
         <activity
+            android:theme="@style/AppTheme_jhfpv"
             android:name="com.joyhonest.jh_fpv.FpvActivity"
             android:screenOrientation="sensorLandscape">
         </activity>
         <activity
+            android:theme="@style/AppTheme_jhfpv"
             android:name="com.joyhonest.jh_fpv.BrowActivity"
             android:screenOrientation="sensorLandscape">
         </activity>
         <activity android:name="com.joyhonest.jh_fpv.grid_fpv"
+                  android:theme="@style/AppTheme_jhfpv"
                   android:screenOrientation="sensorLandscape">
         </activity>
     </application>

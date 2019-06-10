@@ -231,7 +231,7 @@ public class FpvActivity extends AppCompatActivity implements View.OnClickListen
     private void F_Init() {
         MyControl.bFlyType = false;
         wifination.F_AdjBackGround(this, R.mipmap.loginbackground_jh);
-        JH_App.checkDeviceHasNavigationBar(this);
+      //  JH_App.checkDeviceHasNavigationBar(this);
         JH_App.F_CreateLocalFpvDefalutDir();
         JH_App.F_Clear_not_videoFiles();
 
